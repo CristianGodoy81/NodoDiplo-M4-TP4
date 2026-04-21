@@ -117,31 +117,6 @@ function App() {
           </button>
         </div>
 
-        {/* Controles de Paginación (solo se muestran si no estamos viendo favoritos) */}
-        {!mostrarFavoritos && infoPagina && (
-          <div className="flex gap-4 mb-6 mt-4">
-            <button
-              onClick={() => obtenerPersonajes(infoPagina.prev)}
-              disabled={!infoPagina.prev}
-              className={`px-4 py-2 rounded font-bold transition-colors ${
-                !infoPagina.prev ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600 text-white'
-              }`}
-            >
-              Anterior
-            </button>
-            
-            <button
-              onClick={() => obtenerPersonajes(infoPagina.next)}
-              disabled={!infoPagina.next}
-              className={`px-4 py-2 rounded font-bold transition-colors ${
-                !infoPagina.next ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600 text-white'
-              }`}
-            >
-              Siguiente
-            </button>
-          </div>
-        )}
-
         {/* Renderizado condicional */}
         {cargando ? (
           <p className="text-xl text-yellow-300 animate-pulse mt-10">Cargando personajes...</p>
@@ -166,6 +141,31 @@ function App() {
                 {mostrarFavoritos ? 'Todavía no tienes personajes favoritos.' : 'No hay personajes para mostrar.'}
               </p>
             )}
+          </div>
+        )}
+
+        {/* Controles de Paginación (solo se muestran si no estamos viendo favoritos) */}
+        {!mostrarFavoritos && infoPagina && (
+          <div className="flex gap-4 mb-6 mt-4">
+            <button
+              onClick={() => obtenerPersonajes(infoPagina.prev)}
+              disabled={!infoPagina.prev}
+              className={`px-4 py-2 rounded font-bold transition-colors ${
+                !infoPagina.prev ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600 text-white'
+              }`}
+            >
+              Anterior
+            </button>
+            
+            <button
+              onClick={() => obtenerPersonajes(infoPagina.next)}
+              disabled={!infoPagina.next}
+              className={`px-4 py-2 rounded font-bold transition-colors ${
+                !infoPagina.next ? 'bg-gray-600 text-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600 text-white'
+              }`}
+            >
+              Siguiente
+            </button>
           </div>
         )}
       </main>

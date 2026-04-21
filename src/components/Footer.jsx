@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="bg-gray-900 border-t border-gray-700 text-gray-400 text-center py-6 px-4 w-full mt-auto mt-8">
+        <footer className="bg-gray-900 border-t border-gray-700 text-gray-400 text-center py-6 px-4 w-full mt-auto">
             <div className="max-w-5xl mx-auto flex flex-col items-center gap-2">
                 <p className="font-semibold text-gray-300">
                     © 2026 - Nodo Tecnológico de Catamarca
