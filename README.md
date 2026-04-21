@@ -1,3 +1,6 @@
+
+# https://nododiplo-m4-tp4.netlify.app/
+
 # 📌 Trabajo Práctico 4 - Integración con APIs
 
 ## 🎯 **Objetivo General**
@@ -76,7 +79,7 @@ https://rickandmortyapi.com/api/character/
 
 ### 7️⃣ **Despliegue en Netlify o Vercel**
 
-- La app debe estar online y el enlace debe enviarse junto al repositorio. (en el README)
+- La app debe estar online y el enlace debe enviarse junto al repositorio. (https://nododiplo-m4-tp4.netlify.app/)
 
 ---
 
